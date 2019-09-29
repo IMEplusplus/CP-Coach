@@ -1,0 +1,200 @@
+Paradigms:
+  Simulation
+  Brute Force
+  Complete Search
+  Backtracking
+  Greedy
+  Divide and Conquer
+
+Sorting:
+  Mergesort
+  Bucketsort
+
+Search:
+  Linear Search
+  Binary Search
+  Direct Adressing Table
+  Meet in the meddle
+  Ternary Search
+  Parallel Binary Search
+  Binary Search Maximum (Radewoosh)
+
+Graph:
+  Basic
+  Tree
+  Dfs
+  Bfs
+  Dijkstra
+  Bellman Ford
+  SPFA
+  Floyd warshal
+  Connected Components
+  Flood Fill
+  Topological Sort
+    kahn
+  Bipartite Graph Check
+  Articulation Poits and Bridges
+  MST
+    Prim
+    Kruskal
+  Strongly Connected Components (SCC)
+  LCA
+  Kuhn
+  Tarjan
+  2-SAT
+    - + auxiliary nodes technique
+  Eulerian/Hamiltonian Graph
+  Erdos-Gallai
+  Stoer-Wagner (min cut)
+  Prufer Sequence
+  Hungarian Method
+
+Network Flow:
+  Maximum Flow
+  Minimum Cut
+  Minimum Cost Maximum Flow
+  Hopcroft Karp
+  Dilworth's Theorem
+  Scaling Flow
+
+Data Structure:
+  Array
+  Stack
+  Queue
+  List
+  Tree
+  Heap (Priority Queue)
+  Minqueue
+    Deque
+    2 stacks
+  Binary Search Tree (BST)
+  Balanced BST (map/set)
+  Hash Table
+  Prefix Sum
+  Bit Mask
+  DSU - Union Find
+  Fenwick Tree - Binary Indexed Tree (BIT)
+  BIT 2D
+  Sparse Table
+  Sparse Table 2D
+  Range Minimum Query (RMQ)
+  Segment Tree
+  Segment Tree 2D
+  Squareroot Decomposition
+  Mo's Agorithm
+    - Zigzag optimization
+    - + update
+  Convex Hull Trick
+  Heavy-Light Decomposition (HLD)
+  Wavelet Tree
+  Mergesort Tree
+  Centroid Decomposition
+  Treap
+  Splay Tree
+  Dancing Links (Knuth's Algorithm X)
+  Link-Cut Tree
+  LiChao Tree
+  Ordered Set
+  Dynamic Connectivity Offline
+
+Persistent Data Structures:
+  Persistent Segment Tree
+
+DP:
+  Prefix Sum
+  Longest Increasing Subsequence
+  Knapsack
+  Coin Change
+  Digit DP
+  Bitmask DP
+  DP on tree
+  Steiner Tree
+  Edit Distance (String)
+  Longest Commom Subsequence (String)
+  Minimum Vertex Cover on Tree (Graph)
+  Broken Profile DP
+
+  Optimization:
+    Divide and Conquer Optimization O(n^2logn)
+    Knuth Optimization O(n^2)
+    Convex Hull Trick O(n^2(logn)) or O(nlogn)
+    Slope Trick Optimization
+    Allen's Trick Optimization
+
+Math:
+  Basic
+  Fast Exponentiation
+  Matrix Fast Exponentiation
+  Cycle Finding (Floyd)
+  Probabilities
+  Combinatorics
+  Linear Equations
+  Linear Recurrences
+  Fast Fourier Transform
+  Find Divisors
+  Karatsuba
+  Simplex (Linear Programming)
+  Calculus
+  Gauss Elimination
+  Hall's Marriage Theorem
+  Miscellaneous
+
+Number Theory:
+  Greatest Commom Divisor/Lowest Commom Multiple
+  Divisors
+  Extended Euclid
+  Sieve of Erasthotenes
+  Prime Factors
+  Euler Phi
+  Modulo Arithmetic
+  Fermat's Little Theorem
+  Euler's Theorem
+  Primarily Test (Miller-Rabin)
+  Divisors of Large Numbers (Pollard-Rho)
+  GCDSUM
+  Mobius Function
+  Mobius Inversion Function
+  Goldbach's Conjecture
+  Chinese Remainder Theorem
+  Segmented Sieve of Erasthotenes
+  Burnside's Lemma
+
+String:
+  Basic
+  Trie
+  Mathching O(n+m)
+    KMP
+    Z function
+    Rabin Karp
+  Pallindromes (Manacher)
+  Multiple Matching (Aho-Corasick)
+  Suffix Structures
+    Suffix Array
+    Suffix Tree
+    Suffix Automata
+
+Geometry:
+  Line Sweep
+  Radial Sweep
+  Rotating Calipers
+  Convex Hull (Graham Scan)
+  Closest Pair of Points O(nlogn)
+  Intersection of Segments O(nlogn)
+  Convex Hull Trick
+  Clipping Polygon / Polyhedra
+  Farthest Pair of Points
+
+Game Theory:
+  Grundy
+  Staircase Nim
+  Misery Nim
+  Hackenbush
+  Infinite Games(Grundy extended)
+
+Miscellaneus/Techniques
+  Line Sweep (offline)
+  Small to Large
+  Union by Size
+  Recursive Descent Parser
+  Interactive
+  Minimum Arborescence (Edmond's algorithm)
