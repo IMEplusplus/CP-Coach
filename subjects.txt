@@ -1,8 +1,21 @@
+-----------------------------------------------------------------------------------------------------------
+Labels
+  subject -> dependencies, deps1/deps2, [good to know], {related}, /also from this section/
+  deps1/deps2 are dependencies that are excludent, learning one of them is enough to learn this subject
+-----------------------------------------------------------------------------------------------------------
+To do:
+- Split into categories/broad subjects
+- Tag subjects (offline/online)
+- Set difficulties
+- Set study presets (OBI/IOI, Brazil subregionals, Latin America regionals, WF)
+-----------------------------------------------------------------------------------------------------------
+
+
 Paradigms:
   Simulation
   Brute Force
   Complete Search
-  Backtracking
+  Backtracking -> Complete Search
   Greedy
   Divide and Conquer
 
@@ -14,96 +27,138 @@ Search:
   Linear Search
   Binary Search
   Direct Adressing Table
-  Meet in the meddle
-  Ternary Search
-  Parallel Binary Search
-  Binary Search Maximum (Radewoosh)
+  Meet in the meddle -> Linear Search
+  Ternary Search -> Binary Search
+  Parallel Binary Search -> Binary Search, Sorting
+  Binary Search Maximum (Radewoosh) -> Binary Search
 
-Graph:
-  Basic
-  Tree
-  Dfs
-  Bfs
-  Dijkstra
-  Bellman Ford
-  SPFA
-  Floyd warshal
-  Connected Components
-  Flood Fill
-  Topological Sort
-    kahn
-  Bipartite Graph Check
-  Articulation Poits and Bridges
-  MST
-    Prim
-    Kruskal
-  Strongly Connected Components (SCC)
+Data Structure:
+  Basics
+    Array
+    Stack
+    Queue
+    List
+    Deque
+    Heap (Priority Queue)
+    Binary Search Tree (BST)
+    Balanced BST (map/set)
+    Tree
+  Minqueue -> Deque/Stack
+    Deque
+    2 stacks
+  Hash Table -> DS Basics
+  Prefix Sum -> DS Basics, /DP/
+  Bitmask -> C/C++ Basics: bitwise ops
+  Disjoint Set Union (Union Find) -> Graphs Basics, DS Basics
+  Fenwick Tree/Binary Indexed Tree (BIT) -> DS Basics, C/C++ Basics: bitwise ops
+  Fenwick Tree/Binary Indexed Tree 2D (BIT 2D) -> Fenwick Tree
+  Sparse Table -> DS Basics, Binary Lifting
+  Sparse Table 2D -> Sparse Table
+  Segment Tree -> DS Basics, Graphs Basics
+  Segment Tree 2D -> Segment tree
+  Segment Tree Dynamic -> Segment Tree
+  Segment Tree Beats -> Segment Tree
+  Squareroot Decomposition -> DS Basics
+  Mo's Algorithm -> DS Basics, Sorting, [Sqrt Decomposition]
+    + Zigzag optimization
+    + Mo with update -> ?
+  Convex Hull Trick -> DS Basics, Geometry Basics, Sorting
+  Heavy-Light Decomposition (HLD) -> DS Basics, Graphs Basics, [Segment Tree/BIT]
+  Wavelet Tree -> Segment Tree
+  Mergesort Tree -> Segment Tree
+  Centroid Decomposition -> DS Basics, Graphs Basics
+  Treap -> DS Basics, Graphs Basics
+  Splay Tree -> DS Basics, Graphs Basics
+  Dancing Links (Knuth's Algorithm X) -> ?
+  Link-Cut Tree -> Splay Tree
+  LiChao Tree -> Convex Hull Tree
+  Dynamic Connectivity (offline) -> DSU: Partial Persistent (rollback), Sorting, [Segment Tree]
+  Ordered Set -> C++ STL, {Treap}
+  KD-Tree -> Geometry Basics, DS Basics
+  Quad/Octo-tree -> Geometry Basics, DS Basics
+
+Persistent Data Structures:
+  Disjoin Set Union -> DSU
+    Partial Persistent (rollback)
+    Partial Persistent (history)
+  Persistent Segment Tree -> Segment Tree
+
+Graphs:
+  Basics <- list everything inside
+    Eulerian/Hamiltonian Tour/Path
+    Eulerian/Hamiltonian Graph
+    Eulerian/Hamiltonian Tour/Path algorithm
+    Tree
+      Center
+      Centroid
+      Diameter
+      Find Diameter -> Graph Traversal
+      Find Center -> Kahn/Find Diameter
+  DFS -> Graphs Basics
+  BFS -> Graphs Basics
+  Graph Traversal -> DFS/BFS
+    Path recovery
+  Dijkstra -> Graphs Basics, Greedy, Sorting, Heap, {Prim}
+  Bellman Ford -> Graphs Basics
+  SPFA -> Graphs Basics, Bellman Ford
+  Floyd-Warshall -> Graphs Basics, [DP Basics]
+  Connected Components -> Graph Traversal, [Disjoint Set Union], {Flood Fill} <- too close to traversal
+  Flood Fill -> Graph Traversal, {Connected Components} <- too close to traversal
+  Topological Sort -> Graphs Basics: DAG
+    Kahn
+    DFS
+  Bipartite Graph Check -> Graphs Basics
+  Articulation Points and Bridges
+    Tarjan -> DFS, {SCC: Tarjan}
+  Minimum Spanning Tree
+    Prim -> Graphs Basics, Greedy, Sorting, Heap, {Dijkstra}
+    Kruskal -> Disjoint Set Union, Sorting
+  Strongly Connected Components
+    Kosaraju -> DFS
+    Tarjan -> DFS, {Articulation: Tarjan}
+  Euler Tour -> Graphs Basics
   LCA
-  Kuhn
-  Tarjan
-  2-SAT
-    - + auxiliary nodes technique
-  Eulerian/Hamiltonian Graph
-  Erdos-Gallai
-  Stoer-Wagner (min cut)
-  Prufer Sequence
-  Hungarian Method
+    Sqrt Decomposition -> Sqrt Decomposition
+    Segtree + Euler Tour -> Segment Tree, Euler Tour
+    Binary Lifting -> Sparse Table
+  Maximum (Cardinality Bipartite) Matching
+    Kuhn -> DFS, [Basics: Bipartite Graph]
+  Maximum (Cardinality Bipartite) Weighted Matching
+    Hungarian Method -> ?, [Kuhn], {Flow: Min-cost Max-flow}
+  2-SAT -> SCC, Topological Sort
+    + Auxiliary Nodes technique
+  Erdos-Gallai theorem -> Graphs Basics
+  Stoer-Wagner -> Graphs Basics
+  Edmond's Blossom -> Link-Cut Tree?
+  Prufer Sequence ->
+  Matroids
+    Matroid Intersection
 
 Network Flow:
   Maximum Flow
-  Minimum Cut
-  Minimum Cost Maximum Flow
-  Hopcroft Karp
-  Dilworth's Theorem
-  Scaling Flow
-
-Data Structure:
-  Array
-  Stack
-  Queue
-  List
-  Tree
-  Heap (Priority Queue)
-  Minqueue
-    Deque
-    2 stacks
-  Binary Search Tree (BST)
-  Balanced BST (map/set)
-  Hash Table
-  Prefix Sum
-  Bit Mask
-  DSU - Union Find
-  Fenwick Tree - Binary Indexed Tree (BIT)
-  BIT 2D
-  Sparse Table
-  Sparse Table 2D
-  Range Minimum Query (RMQ)
-  Segment Tree
-  Segment Tree 2D
-  Squareroot Decomposition
-  Mo's Agorithm
-    - Zigzag optimization
-    - + update
-  Convex Hull Trick
-  Heavy-Light Decomposition (HLD)
-  Wavelet Tree
-  Mergesort Tree
-  Centroid Decomposition
-  Treap
-  Splay Tree
-  Dancing Links (Knuth's Algorithm X)
-  Link-Cut Tree
-  LiChao Tree
-  Ordered Set
-  Dynamic Connectivity Offline
-
-Persistent Data Structures:
-  Persistent Segment Tree
+    Ford-Fulkerson method -> DFS
+    Edmond-Karp -> BFS
+    Dinic -> BFS, DFS
+  Minimum Cut -> ?, [Maximum Flow]
+  Minimum Cost Maximum Flow -> Edmond-Karp, Dijkstra/Bellman-Ford/SPFA
+  Hopcroft Karp -> ?
+  Dilworth's Theorem -> ?
+  Scaling Flow -> ?
 
 DP:
+  Basics
+    Tabulation
+    Memoization
   Prefix Sum
   Longest Increasing Subsequence
   Knapsack
+    Knapsack 0-1
+    Knapsack 0-1 with costs
+    Knapsack 0-k
+    Knapsack 0-k with costs
+    Knapsack bounded sum
+    Knapsack low maximum value
+    Knapsack D&C all except one O(N*W*logN)
   Coin Change
   Digit DP
   Bitmask DP
@@ -131,13 +186,25 @@ Math:
   Linear Equations
   Linear Recurrences
   Fast Fourier Transform
+    Number Theory Transform
+      + fast exponential technique
+    Fast-Walsh Radamard Transform
+    + Transforming big numbers (write as X = k*A + B)
+    + Two multiplications using a single transform
   Find Divisors
   Karatsuba
   Simplex (Linear Programming)
-  Calculus
   Gauss Elimination
+    Modular Elimination
+    XOR Elimination
+    + XOR-3-SAT
   Hall's Marriage Theorem
+  Calculus
+  Numerical methods
+    Newton's method
+    (Forth Order-Runge Kutta Method)
   Miscellaneous
+    Jensen's inequality
 
 Number Theory:
   Greatest Commom Divisor/Lowest Commom Multiple
@@ -159,10 +226,10 @@ Number Theory:
   Segmented Sieve of Erasthotenes
   Burnside's Lemma
 
-String:
-  Basic
+Strings:
+  Basics
   Trie
-  Mathching O(n+m)
+  Matching O(N+M)
     KMP
     Z function
     Rabin Karp
@@ -174,6 +241,10 @@ String:
     Suffix Automata
 
 Geometry:
+  Basics
+    Points
+    Lines
+    Circles
   Line Sweep
   Radial Sweep
   Rotating Calipers
@@ -198,3 +269,6 @@ Miscellaneus/Techniques
   Recursive Descent Parser
   Interactive
   Minimum Arborescence (Edmond's algorithm)
+  Binary Lifting
+  Range Minimum Query (RMQ)
+  Auxiliary Range Nodes (use Segment Tree nodes)
