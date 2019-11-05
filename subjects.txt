@@ -10,6 +10,12 @@ To do:
 - Set study presets (OBI/IOI, Brazil subregionals, Latin America regionals, WF)
 -----------------------------------------------------------------------------------------------------------
 
+(Hashing???)
+
+Programming:
+  Basics
+    Recursion
+    Bitwise
 
 Paradigms:
   Simulation
@@ -20,8 +26,10 @@ Paradigms:
   Divide and Conquer
 
 Sorting:
-  Mergesort
-  Bucketsort
+  Merge sort -> Paradigms: D&C
+  Counting Sort
+  Radix Sort
+  Bucket sort
 
 Search:
   Linear Search
@@ -147,59 +155,62 @@ Network Flow:
 
 DP:
   Basics
-    Tabulation
-    Memoization
-  Prefix Sum
+    Tabulation -> Programming Basics - Recursion
+    Memoization -> DS Basics - Array
+  Prefix Sum -> DS Basics - Array
   Longest Increasing Subsequence
+    O(N^2)
+    O(NlogN) -> Search: Binary Search
   Knapsack
     Knapsack 0-1
     Knapsack 0-1 with costs
     Knapsack 0-k
     Knapsack 0-k with costs
     Knapsack bounded sum
-    Knapsack low maximum value
-    Knapsack D&C all except one O(N*W*logN)
+    Knapsack low maximum value -> Dijkstra
+    Knapsack D&C all except one O(N*W*logN) -> Paradigms: D&C
+    Knapsack merge -> [Fast Fourier Transform]
   Coin Change
   Digit DP
-  Bitmask DP
-  DP on tree
-  Steiner Tree
-  Edit Distance (String)
-  Longest Commom Subsequence (String)
-  Minimum Vertex Cover on Tree (Graph)
-  Broken Profile DP
+  Bitmask DP -> Programming: Bitwise
+  DP on tree -> Graphs Basics: Tree, /Graphs/
+  Steiner Tree -> ?, /Graphs/
+  Edit Distance -> /Strings/
+  Longest Common Subsequence -> /Strings/
+  Minimum Vertex Cover on Tree -> DP on tree, /Graphs/
+  Broken Profile DP -> ?
 
   Optimization:
-    Divide and Conquer Optimization O(n^2logn)
-    Knuth Optimization O(n^2)
-    Convex Hull Trick O(n^2(logn)) or O(nlogn)
-    Slope Trick Optimization
-    Allen's Trick Optimization
+    Divide and Conquer Optimization O(n^2logn) -> Paradigms: D&C
+    Knuth Optimization O(n^2) -> Divide and Conquer Optimization
+    Convex Hull Trick O(n^2(logn)) or O(nlogn) -> ?
+    Slope Trick Optimization -> ?
+    Alien's Trick Optimization -> ?
 
 Math:
-  Basic
-  Fast Exponentiation
-  Matrix Fast Exponentiation
-  Cycle Finding (Floyd)
-  Probabilities
-  Combinatorics
-  Linear Equations
-  Linear Recurrences
+  Basics
+  Fast Exponentiation -> Paradigms: D&C
+  Matrix Fast Exponentiation -> Fast Exponentiation, Math Basics: Matrixes
+  Cycle Finding (Floyd) -> Graphs Basics: Cycles
+  Probabilities -> ?
+    Expected Value
+  Combinatorics -> ?
+  Linear Equations -> ?
+  Linear Recurrences -> Matrix Fast Exponentiation
   Fast Fourier Transform
     Number Theory Transform
       + fast exponential technique
     Fast-Walsh Radamard Transform
     + Transforming big numbers (write as X = k*A + B)
     + Two multiplications using a single transform
-  Find Divisors
-  Karatsuba
-  Simplex (Linear Programming)
+  Karatsuba -> Paradigms: D&C
+  Simplex (Linear Programming) -> ?
   Gauss Elimination
     Modular Elimination
     XOR Elimination
     + XOR-3-SAT
-  Hall's Marriage Theorem
-  Calculus
+  Hall's Marriage Theorem -> ?
+  Calculus -> ?
   Numerical methods
     Newton's method
     (Forth Order-Runge Kutta Method)
@@ -207,38 +218,44 @@ Math:
     Jensen's inequality
 
 Number Theory:
-  Greatest Commom Divisor/Lowest Commom Multiple
-  Divisors
+  Basics
+    Greatest Common Divisor
+    Lowest Common Multiple
+    Sieve of Eratothenes
+    Divisors O(sqrt(N))
+    Prime Factors
   Extended Euclid
-  Sieve of Erasthotenes
-  Prime Factors
   Euler Phi
   Modulo Arithmetic
-  Fermat's Little Theorem
-  Euler's Theorem
+    Basics
+    Fermat's Little Theorem
+    Euler's Theorem
+    Chinese Remainder Theorem -> Modulo Arithmetic
   Primarily Test (Miller-Rabin)
   Divisors of Large Numbers (Pollard-Rho)
-  GCDSUM
+  Segmented Sieve of Erasthotenes -> Sieve of Eratothenes
   Mobius Function
   Mobius Inversion Function
+  GCDSUM
   Goldbach's Conjecture
-  Chinese Remainder Theorem
-  Segmented Sieve of Erasthotenes
   Burnside's Lemma
 
 Strings:
   Basics
-  Trie
+    Matching O(N^2)
+  Trie -> DS Basics: Trees
   Matching O(N+M)
-    KMP
+    Knuth-Morris-Pratt (KMP)
+      Prefix Function
+      KMP Automata
     Z function
-    Rabin Karp
-  Pallindromes (Manacher)
-  Multiple Matching (Aho-Corasick)
-  Suffix Structures
-    Suffix Array
-    Suffix Tree
-    Suffix Automata
+    Rabin Karp -> Polynomial (Rolling) Hashing
+  Palindromes (Manacher)
+  Multiple Matching (Aho-Corasick) -> Graphs: BFS, KMP
+  Suffix Structures -> Trie
+    Suffix Array -> Sorting: Counting Sort
+    Suffix Tree -> ?
+    Suffix Automata -> ?
 
 Geometry:
   Basics
@@ -248,27 +265,32 @@ Geometry:
   Line Sweep
   Radial Sweep
   Rotating Calipers
-  Convex Hull (Graham Scan)
+  Convex Hull
+    Graham Scan -> Radial Sweep
+    Monotone Chain -> (Sorted arrays merge?)
   Closest Pair of Points O(nlogn)
-  Intersection of Segments O(nlogn)
-  Convex Hull Trick
-  Clipping Polygon / Polyhedra
-  Farthest Pair of Points
+    D&C -> Paradigms: D&C, Sorting
+    Line Sweep -> ?
+  Intersection of Segments O(nlogn + k)
+    Line Sweep -> DS Basics: Set, Line Sweep
+  Convex Hull Trick -> ?
+  Clipping Polygon / Polyhedra -> ?
+  Farthest Pair of Points -> Convex Hull
 
 Game Theory:
-  Grundy
-  Staircase Nim
-  Misery Nim
+  Sprague-Grundy Theorem
+  Staircase Nim -> Sprague-Grundy Theorem
+  Misère Nim -> Sprague-Grundy Theorem
   Hackenbush
   Infinite Games(Grundy extended)
 
 Miscellaneus/Techniques
-  Line Sweep (offline)
+  ? Line Sweep (offline)
   Small to Large
   Union by Size
   Recursive Descent Parser
-  Interactive
   Minimum Arborescence (Edmond's algorithm)
   Binary Lifting
   Range Minimum Query (RMQ)
   Auxiliary Range Nodes (use Segment Tree nodes)
+  Interactive problems
