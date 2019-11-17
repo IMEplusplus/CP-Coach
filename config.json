@@ -1,0 +1,18 @@
+{
+  "debug": {
+    "host": "127.0.0.1",
+    "port": 5000,
+    "debug": true
+  },
+  "prod": {
+    "host": "0.0.0.0",
+    "port": 8000,
+
+    "debug": false,
+
+    "isProxied": false,
+    "db": "sqlite:///ctf.db",
+    "language_file": "lang.json",
+    "language": "en"
+  }
+}
